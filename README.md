@@ -2,20 +2,20 @@
 
 **TODO: Add description**
 
-## Installation
+This is a small parser built in elixir using erlangs bitstring and pattern
+matching design. It uses recursion to transform a binary string into a set of
+datastructures.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `edemo` to your list of dependencies in `mix.exs`:
+My intention was to use erlangs tail call elimination recursion which is a unique
+feature of the erlang virtual machine. Most languaues do not do tail-call elimination
+and as such recursive functions tend to be limited by stack size.
 
-```elixir
-def deps do
-  [
-    {:edemo, "~> 0.1.0"}
-  ]
-end
-```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/edemo>.
+
+## Execution
+
+mix escript.build
+./edemo
+
+
 
