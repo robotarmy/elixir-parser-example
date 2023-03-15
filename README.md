@@ -1,6 +1,5 @@
 # Edemo
 
-**TODO: Add description**
 
 This is a small parser built in elixir using erlangs bitstring and pattern
 matching design. It uses recursion to transform a binary string into a set of
